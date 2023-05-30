@@ -906,8 +906,8 @@ margin-bottom: 8px;
 
 .modal-icon-input {
     display: block;
-    width: 18px;
-    height: 24px;
+    /* width: 18px;
+    height: 24px; */
     position: absolute;
     top: 50%;
     left: 16px;
@@ -1046,8 +1046,12 @@ margin-bottom: 8px;
 margin-left: auto;
 }
 
-.form-footer-enter {
+.form-footer {
     display: flex;
+}
+
+.form-footer-enter {
+    margin-right: 24px;
     
 }
 
@@ -1056,16 +1060,16 @@ margin-left: auto;
     height: 40px;
     border: 1px solid #FFFFFF;
     padding-left: 16px;
-    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    margin-right: 24px;
-    background: #2E2F42;
+    /* margin-right: 24px; */
+    background-color: transparent;
 
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
-        line-height: 24px;
+        line-height: 1.5;
         letter-spacing: 0.04em;
         color: #FFFFFF;
 }
@@ -1085,13 +1089,15 @@ margin-left: auto;
     width:165px;
     height: 40px;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+    /* flex-direction: row-reverse; */
+    justify-content: center;
     align-items: center;
     padding: 8px 24px;
     gap: 16px;
-    background: #4D5AE5;
+    background-color: #4D5AE5;
+    border: none;
     border-radius: 4px;
+    cursor: pointer;
 
     font-family: 'Roboto';
     font-style: normal;

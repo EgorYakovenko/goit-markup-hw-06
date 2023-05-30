@@ -426,29 +426,31 @@
           </ul>
         </div>
         <div class="form-footer-box">
+          <p class="form-footer-title">Subscribe</p>
           <form class="form-footer">
-            <p class="form-footer-title">Subscribe</p>
             <label class="form-footer-enter">
               <input
-                type="text"
+                type="email"
                 name="user_mail"
                 class="form-footer-input"
                 placeholder="E-mail"
                 pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
               />
-              <span class="footer-icon-input">
-                <svg class="form-footer-icon">
-                  <use href="./images/icons.svg#icon-telegram"></use>
-                </svg>
-                <button type="submit" class="form-footer-btn">Subscribe</button>
-              </span>
+              <button type="submit" class="form-footer-btn">
+                <span class="footer-icon-input">
+                  <svg class="form-footer-icon">
+                    <use href="./images/icons.svg#icon-telegram"></use>
+                  </svg> </span
+                >Subscribe
+              </button>
             </label>
           </form>
         </div>
       </div>
     </footer>
     <!-- ================== МОДАЛЬНОЕ ОКНО ================== -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- is-hidden -->
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
@@ -459,13 +461,13 @@
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <div class="modal-form-box">
-            <label for="user_name" class="modal-form-enter">
-              <span class="modal-input-text">Name</span>
+            <label for="user-name" class="modal-form-enter">
               <div class="icon-input">
+                <span class="modal-input-text">Name</span>
                 <input
                   type="text"
                   id="user-name"
-                  name="user_name"
+                  name="user-name"
                   class="modal-form-input"
                   required
                   pattern="[a-zA-Z]+"
@@ -547,3 +549,12 @@
     <script src="./js/modal.js"></script>
   </body>
 </html>
+
+<body>
+  <p style="text-align: center">
+    <button>Button with text</button>
+    <button>
+      <img src="image/umbrella.gif" alt="Umbrella" style="vertical-align: middle" /> Graphic button
+    </button>
+  </p>
+</body>
