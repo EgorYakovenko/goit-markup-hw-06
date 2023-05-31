@@ -986,10 +986,10 @@ margin-bottom: 8px;
     opacity: 1;
 }
 
-.modal-form-check:checked + .check-box-new {
+.modal-form-check:checked + .modal-form-check-policy > .check-box-new {
     background-color :#404BBF;
     /* border-color: #404BBF;; */
-    fill: #F4F4FD;
+    /* fill: #F4F4FD; */
     border: none;
     fill:#ffffff;
 }
@@ -1005,7 +1005,7 @@ margin-bottom: 8px;
 
 }
 .modal-form-check-policy {
-    display: flex;
+    /* display: flex; */
     align-items: center;
     font-family: 'Roboto';
     font-style: normal;
